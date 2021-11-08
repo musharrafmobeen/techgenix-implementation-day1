@@ -1,0 +1,109 @@
+.navbar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  position: sticky;
+  top: 0;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  /* padding-top: 0.5em; */
+  background-color: transparent;
+  /* overflow-y: hidden; */
+  /* opacity: 0.7; */
+  z-index: 1;
+}
+
+.logo {
+  -ms-flex-negative: 10;
+  flex-shrink: 10;
+  width: 50px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  height: 50px;
+}
+
+.companyName {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  color: rgb(255, 255, 255);
+  margin-left: 0.5em;
+}
+
+.link {
+  text-decoration: none;
+  margin-left: 1em;
+  margin-right: 1em;
+  color: rgb(255, 255, 255);
+}
+
+.navlink {
+  justify-self: flex-end;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.navlink:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  border-radius: 5em;
+  border: 1px solid #f835ff;
+}
+
+.navlink:hover a {
+  color: #f835ff !important;
+}
+DehazeIcon {
+  color: white;
+}
+
+.navlogodiv {
+  -ms-flex-negative: 10;
+  flex-shrink: 10;
+  padding-left: 5em;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.navlinksdiv {
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 3em;
+  /* padding-right: 5em; */
+}
+
+.drawer {
+  display: none;
+}
+
+@media screen and (max-width: 780px) {
+  .navlogodiv {
+    padding-left: 1em;
+  }
+  .navlinksdiv {
+    padding-right: 1em;
+    margin-right: 0em;
+  }
+  a {
+    display: none;
+  }
+  .drawer {
+    display: inline;
+    justify-self: flex-end;
+    margin-right: 1em;
+  }
+}
+/*# sourceMappingURL=navbar.css.map */

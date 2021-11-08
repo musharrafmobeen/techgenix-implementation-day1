@@ -1,0 +1,20 @@
+.main-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  /* align-content: center;
+  justify-content: center;
+  align-items: center; */
+  overflow-y: hidden;
+}
+
+.internal-div {
+  align-self: center;
+  border: 1px solid rgb(187, 5, 5);
+}
