@@ -2,10 +2,9 @@ import "../styles/servicescards.css";
 import Media from "react-media";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { useState } from "react";
+import React from "react";
 
 const ServicesCards = () => {
-  const [style, setStyle] = useState([true, false, false, false, false, false]);
   const data = [
     {
       icon: "ailogo2.png",

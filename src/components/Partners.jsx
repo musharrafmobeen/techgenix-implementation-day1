@@ -63,6 +63,9 @@ const Partners = () => {
 
   return (
     <div className="partners-container">
+      <div className="partners-heading">
+        <h2>Partners</h2>
+      </div>
       <Carousel
         swipeable={true}
         draggable={true}

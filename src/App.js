@@ -1,8 +1,13 @@
 import "./App.css";
+import AboutUs from "./components/AboutUs";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Partners from "./components/Partners";
 import ServicesCards from "./components/ServicesCards";
+import React from "react";
+import Team from "./components/Team";
+import Careers from "./components/Careers";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -18,10 +23,14 @@ function App() {
         <Partners />
       </section>
       <section>
-        <div className="internal-div">four</div>
+        <AboutUs />
       </section>
       <section>
-        <div className="internal-div">five</div>
+        <Contact />
+      </section>
+      <section>
+        <Team />
+        <Careers />
       </section>
     </div>
   );

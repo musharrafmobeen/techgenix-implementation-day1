@@ -1,7 +1,9 @@
 .partners-container {
   display: flex;
   align-content: center;
-  background-color: cadetblue;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(134, 70, 163);
   width: 100%;
   height: 100%;
 }
@@ -13,6 +15,8 @@
   width: fit-content;
   padding: 1rem;
   margin: 1em;
+  cursor: grab;
+  /* border-radius: 2%; */
 }
 
 .partner-logo {
@@ -24,4 +28,9 @@
   width: 100%;
   padding-top: 1em;
   padding-bottom: 3em;
+}
+
+.partners-heading {
+  width: 100%;
+  text-align: center;
 }
