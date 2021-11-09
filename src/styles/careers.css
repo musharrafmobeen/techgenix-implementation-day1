@@ -1,11 +1,22 @@
-.cardsContainer {
+.job-description-link-container {
+  align-self: center;
+  width: 80%;
+  text-align: center;
+  padding-left: 1em;
+}
+
+.job-description-link {
+  text-decoration: none;
+}
+
+.career-cardsContainer {
   display: flex;
   padding-right: 10em;
   padding-left: 10em;
   flex-wrap: wrap;
 }
 
-.serviceCardContainer {
+.career-cardContainer {
   margin: 1em;
   flex: 1 1 20em;
   display: flex;
@@ -21,21 +32,16 @@
   color: black;
   background-color: white;
   overflow: hidden;
-  transform: translateX(-100%);
-  -webkit-transform: translateX(-100%);
-  animation: slide-in 1s forwards;
-  -webkit-animation: slide-in 2s forwards;
 }
 
-.serviceCardContainer:hover {
+.career-cardContainer:hover {
   transition: 0.2s ease-in-out;
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
   color: rgb(81, 123, 187);
   transform: scale(1.05);
-  -webkit-transform: scale(1.05);
 }
 
-.cardImg {
+.career-cardImg {
   flex: 1 1 33%;
   width: 50px;
   height: 50px;
@@ -44,7 +50,7 @@
   max-height: 50px;
 }
 
-.cardTitle {
+.career-cardTitle {
   text-align: center;
   flex: 1 1 33%;
   align-self: center;
@@ -53,7 +59,7 @@
   height: fit-content;
 }
 
-.cardText {
+.career-cardText {
   flex: 1 1 33%;
   align-self: center;
   width: 80%;
@@ -63,7 +69,7 @@
   margin-top: 0;
 }
 
-.serviceCardSectionContainer {
+.careerCardSectionContainer {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -74,13 +80,13 @@
   justify-content: center;
 }
 
-.service-section-title {
+.career-section-title {
   width: 100%;
   text-align: center;
   text-justify: center;
 }
 
-.carousel-container {
+.career-carousel-container {
   display: flex;
   align-content: flex-start;
   align-self: center;
@@ -90,11 +96,11 @@
   padding-bottom: 3em;
 }
 
-.image-figure {
+.career-image-figure {
   margin: auto;
 }
 
-.image-figcaption {
+.career-image-figcaption {
   margin: auto;
   display: flex;
   width: 100%;
@@ -102,32 +108,42 @@
   justify-content: center;
 }
 
-.carousel-item {
+.career-carousel-item {
   transform: scale(1);
 }
 
 @media screen and (max-width: 1260px) {
-  .cardTitle {
+  .career-cardTitle {
     font-size: medium;
   }
-  .cardContainer {
+  .career-cardContainer {
     padding-top: 3em;
     padding-bottom: 3em;
+  }
+
+  .job-description-link {
+    font-size: small;
   }
 }
 
 @media screen and (max-width: 1380px) {
-  .cardTitle {
+  .career-cardTitle {
+    font-size: medium;
+  }
+  .job-description-link {
     font-size: medium;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .cardTitle {
+  .career-cardTitle {
     font-size: medium;
   }
-  .cardContainer {
+  .career-cardContainer {
     padding-top: 2em;
     padding-bottom: 3em;
+  }
+  .job-description-link {
+    font-size: small;
   }
 }

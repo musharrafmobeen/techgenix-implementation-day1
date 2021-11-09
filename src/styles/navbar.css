@@ -15,6 +15,10 @@
   z-index: 1;
 }
 
+/* .navbar:hover {
+  display: inline;
+} */
+
 .logo {
   -ms-flex-negative: 10;
   flex-shrink: 10;
@@ -29,7 +33,7 @@
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
-  color: rgb(255, 255, 255);
+  color: rgb(86, 179, 255);
   margin-left: 0.5em;
 }
 
@@ -37,7 +41,7 @@
   text-decoration: none;
   margin-left: 1em;
   margin-right: 1em;
-  color: rgb(255, 255, 255);
+  color: rgb(86, 179, 255);
 }
 
 .navlink {
@@ -97,7 +101,7 @@ DehazeIcon {
     padding-right: 1em;
     margin-right: 0em;
   }
-  a {
+  link {
     display: none;
   }
   .drawer {

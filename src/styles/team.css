@@ -4,10 +4,101 @@
   display: flex;
   justify-content: center;
   align-content: center;
+  background: linear-gradient(120deg, rgb(162, 192, 255), rgb(31, 7, 70));
 }
 
-.react-3d-carousel {
-  padding-top: 10em;
-  width: 50%;
-  height: 50%;
+.team-card-article {
+  display: flex;
+  overflow: hidden;
+  width: fit-content;
+  height: 23em;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-radius: 0.5em;
+  margin: 1em;
+  margin-bottom: 4em;
+  padding: 1em;
+  box-shadow: 0px 8px 16px 0px slategrey;
+  background-color: white;
+}
+
+.team-carousel-container {
+  width: 80%;
+  height: fit-content;
+  align-self: center;
+  display: grid;
+}
+
+.team-member-img {
+  width: 60px;
+  height: 60px;
+  min-height: 50px;
+  border-radius: 5em;
+  align-self: center;
+}
+
+.team-figure {
+  width: fit-content;
+  height: fit-content;
+  margin: inherit;
+}
+
+.team-figcaption {
+  width: 90%;
+  align-self: center;
+  text-align: center;
+}
+
+.team-member-designation {
+  width: 100%;
+  font-size: x-large;
+  text-align: center;
+  color: rgb(117, 40, 27);
+  padding-top: 1rem;
+  position: absolute;
+  bottom: 20%;
+  left: 1%;
+}
+
+.team-member-description {
+  font-size: small;
+  height: fit-content;
+}
+
+.team-member-name {
+  font-size: x-large;
+  height: fit-content;
+}
+
+@media screen and (max-width: 660px) {
+  .team-member-description {
+    font-size: x-small;
+  }
+
+  .team-member-name {
+    font-size: large;
+  }
+  .team-card-article {
+    height: 25em;
+  }
+  .team-member-designation {
+    font-size: larger;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .team-member-description {
+    font-size: small;
+  }
+
+  .team-member-name {
+    font-size: large;
+  }
+  .team-card-article {
+    height: 25em;
+  }
+  .team-member-designation {
+    font-size: large;
+  }
 }

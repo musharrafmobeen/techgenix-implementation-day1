@@ -18,7 +18,7 @@ const ServicesCards = () => {
     },
     {
       icon: "phonelogo2.png",
-      title: "Mobile Application Development",
+      title: "Mobile App Development",
       text: "Mobile application development is the process to making software for smartphones and digital assistants, most commonly for Android and iOS.",
     },
     {
@@ -29,18 +29,18 @@ const ServicesCards = () => {
     {
       icon: "devops4.png",
       title: "DevOps",
-      text: "DevOps is the combination of cultural philosophies, practices, and tools that increases an organization's ability to deliver applications and services at high velocity",
+      text: "DevOps is the combination of cultural practices, and tools that increases an organization's ability to deliver applications and services at high velocity.",
     },
     {
       icon: "embededsvg.svg",
-      title: "Embeded Software Development",
-      text: "mbedded software is used to control the limited, set functions of hardware devices and doesn't generally need input; it is not typically worked with directly by users.",
+      title: "Embeded Softwares",
+      text: "Embedded software is used to control the limited, set functions of hardware devices; it is not typically worked with directly by users.",
     },
   ];
 
   const responsive = {
     tablet: {
-      breakpoint: { max: 1024, min: 0 },
+      breakpoint: { max: 1260, min: 0 },
       items: 3,
       slidesToSlide: 1,
     },
@@ -61,7 +61,7 @@ const ServicesCards = () => {
       <div className="service-section-title">
         <h1>Services</h1>
       </div>
-      <Media query="(max-width: 1024px)">
+      <Media query="(max-width: 1260px)">
         {(matches) =>
           matches ? (
             <Carousel
@@ -78,7 +78,7 @@ const ServicesCards = () => {
               arrows={false}
             >
               {data.map((obj) => (
-                <a className="cardContainer" href="#">
+                <a className="serviceCardContainer" href="#">
                   <figure className="image-figure">
                     <img className="cardImg" src={obj.icon} alt="" />
                   </figure>
@@ -92,7 +92,7 @@ const ServicesCards = () => {
           ) : (
             <article className="cardsContainer">
               {data.map((obj) => (
-                <a className="cardContainer" href="#">
+                <a className="serviceCardContainer" href="#">
                   <figure className="image-figure">
                     <img className="cardImg" src={obj.icon} alt="" />
                   </figure>

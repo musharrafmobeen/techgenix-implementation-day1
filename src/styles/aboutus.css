@@ -3,8 +3,9 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-content: center;
+  background: radial-gradient(rgb(162, 192, 255), rgb(31, 7, 70));
 }
 
 .aboutus-heading {
@@ -22,6 +23,7 @@
 
 .aboutus-img {
   width: 100%;
+  border-radius: 5em;
 }
 
 .aboutus-text {

@@ -8,6 +8,7 @@ import React from "react";
 import Team from "./components/Team";
 import Careers from "./components/Careers";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -30,7 +31,12 @@ function App() {
       </section>
       <section>
         <Team />
+      </section>
+      <section>
         <Careers />
+      </section>
+      <section>
+        <Footer />
       </section>
     </div>
   );

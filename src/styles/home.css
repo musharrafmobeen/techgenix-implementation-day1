@@ -16,7 +16,6 @@
 .homeTextContainer {
   align-self: center;
   margin-bottom: 10em;
-  width: 30%;
   transform: translateX(-100%);
   -webkit-transform: translateX(-100%);
   animation: slide-in 1s forwards;
@@ -25,20 +24,19 @@
 
 .homeText {
   justify-content: center;
-  font-size: 4em;
+  font-size: 5em;
   min-width: 0;
-  flex: 0 2 auto;
   margin-bottom: 0px;
   color: white;
+  font-family: "Secular One", sans-serif;
 }
 
 .homeTextDetail {
   font-size: 1em;
-  flex: 0 2 auto;
-  min-width: 0;
   text-align: justify;
-  text-align-last: left;
   color: white;
+  width: 60%;
+  font-family: "Mochiy Pop P One", sans-serif;
 }
 
 .homeImageContainer {
@@ -64,7 +62,7 @@
   }
 
   .homeTextContainer {
-    width: auto;
+    /* width: auto; */
   }
 
   .homeText {
