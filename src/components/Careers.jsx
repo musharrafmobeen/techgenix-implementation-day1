@@ -80,7 +80,7 @@ const Careers = () => {
               arrows={false}
             >
               {data.map((obj) => (
-                <a className="career-cardContainer" href="#">
+                <div className="career-cardContainer">
                   <figure className="career-image-figure">
                     <img className="career-cardImg" src={obj.icon} alt="" />
                   </figure>
@@ -93,13 +93,13 @@ const Careers = () => {
                       {jobDescriptionLink}
                     </a>
                   </div>
-                </a>
+                </div>
               ))}
             </Carousel>
           ) : (
             <article className="career-cardsContainer">
               {data.map((obj) => (
-                <a className="career-cardContainer" href="#">
+                <div className="career-cardContainer">
                   <figure className="career-image-figure">
                     <img className="career-cardImg" src={obj.icon} alt="" />
                   </figure>
@@ -112,7 +112,7 @@ const Careers = () => {
                       {jobDescriptionLink}
                     </a>
                   </div>
-                </a>
+                </div>
               ))}
             </article>
           )

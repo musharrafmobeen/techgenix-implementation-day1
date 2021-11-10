@@ -97,6 +97,7 @@
   }
   .team-card-article {
     height: 25em;
+    margin-bottom: 2em;
   }
   .team-member-designation {
     font-size: large;

@@ -21,10 +21,10 @@
   color: black;
   background-color: white;
   overflow: hidden;
-  transform: translateX(-100%);
+  /* transform: translateX(-100%);
   -webkit-transform: translateX(-100%);
   animation: slide-in 1s forwards;
-  -webkit-animation: slide-in 2s forwards;
+  -webkit-animation: slide-in 2s forwards; */
 }
 
 .serviceCardContainer:hover {

@@ -1,13 +1,12 @@
 .homeContainer {
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   justify-content: space-between;
   padding-left: 5em;
   justify-self: center;
   padding-bottom: 2em;
-  position: static;
-  background-image: url("space.jpg");
+  background-image: url("bg-img1.jpeg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -100,5 +99,17 @@
   to {
     transform-origin: 50% 50%;
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .homeTextContainer {
+    margin-bottom: 1em;
+  }
+}
+
+@media screen and (max-height: 660px) {
+  .homeTextContainer {
+    margin-bottom: 1em;
   }
 }

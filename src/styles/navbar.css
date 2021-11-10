@@ -8,16 +8,11 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  /* padding-top: 0.5em; */
-  background-color: transparent;
-  /* overflow-y: hidden; */
-  /* opacity: 0.7; */
+  /* background-color: transparent; */
+  background-color: black;
+  opacity: 0.7;
   z-index: 1;
 }
-
-/* .navbar:hover {
-  display: inline;
-} */
 
 .logo {
   -ms-flex-negative: 10;
@@ -33,15 +28,20 @@
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
-  color: rgb(86, 179, 255);
+  color: rgb(255, 255, 255);
   margin-left: 0.5em;
 }
 
 .link {
   text-decoration: none;
+  display: flex;
+  align-items: center;
   margin-left: 1em;
   margin-right: 1em;
-  color: rgb(86, 179, 255);
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  border: none;
+  font-size: large;
 }
 
 .navlink {
@@ -58,12 +58,19 @@
   border: 1px solid #f835ff;
 }
 
-.navlink:hover a {
+.navlink:hover a,
+.navlink:hover button {
   color: #f835ff !important;
 }
-DehazeIcon {
-  color: white;
+.sidebar-logos {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5rem;
 }
+
+/* DehazeIcon {
+  color: white;
+} */
 
 .navlogodiv {
   -ms-flex-negative: 10;
@@ -93,13 +100,20 @@ DehazeIcon {
   display: none;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 786px) {
+  .companyName {
+    font-size: larger;
+  }
   .navlogodiv {
     padding-left: 1em;
   }
   .navlinksdiv {
     padding-right: 1em;
     margin-right: 0em;
+  }
+  .logo {
+    width: 40px;
+    height: 40px;
   }
   link {
     display: none;
@@ -109,5 +123,50 @@ DehazeIcon {
     justify-self: flex-end;
     margin-right: 1em;
   }
+  .nav-sidebar {
+    top: 51.72px !important;
+  }
 }
 /*# sourceMappingURL=navbar.css.map */
+
+.company-sidebar {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+  height: 200px;
+  left: 0px;
+  top: 85.88px;
+  right: 0px;
+  background-color: rgb(0, 0, 0);
+  /* border: 1px solid rgb(255, 255, 255); */
+}
+
+.nav-sidebar {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  padding: 1em;
+  height: fit-content;
+  left: 0px;
+  top: 85.88px;
+  background-color: rgb(0, 0, 0);
+  /* border: 1px solid rgb(255, 255, 255); */
+}
+
+/* .close-icon-img {
+  width: 50px;
+  height: 50px;
+}
+
+.close-icon {
+  align-self: flex-end;
+  margin-right: 5em;
+} */
+
+.hamburger-icon {
+  width: 30px;
+  height: 30px;
+}

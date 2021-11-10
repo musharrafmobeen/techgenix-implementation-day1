@@ -1,6 +1,7 @@
 .main-container {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
+  overflow-x: hidden;
   height: 100vh;
 }
 
@@ -11,10 +12,17 @@ section {
   /* align-content: center;
   justify-content: center;
   align-items: center; */
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .internal-div {
   align-self: center;
   border: 1px solid rgb(187, 5, 5);
 }
+
+/* .footer-contact-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5em;
+  padding-bottom: ;
+} */

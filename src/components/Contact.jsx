@@ -3,7 +3,7 @@ import "../styles/contact.css";
 
 const Contact = () => {
   return (
-    <div className="login-wrapper">
+    <div className="login-wrapper" id="contact">
       <form action="" className="form">
         <h2>Contact</h2>
         <div className="input-group">
@@ -12,7 +12,7 @@ const Contact = () => {
         </div>
         <div className="input-group">
           <input
-            type="password"
+            type="email"
             name="loginPassword"
             id="loginPassword"
             required
@@ -20,13 +20,15 @@ const Contact = () => {
           <label for="loginPassword">Email</label>
         </div>
         <div className="input-group">
-          <input
-            type="password"
-            name="loginPassword"
-            id="loginPassword"
+          {/* <input type="text" name="loginPassword" id="loginPassword" required /> */}
+          <textarea
+            name="message"
+            id="contactor-message"
+            cols="30"
+            rows="10"
+            placeholder="Message"
             required
-          />
-          <label for="loginPassword">Message</label>
+          ></textarea>
         </div>
 
         <input type="submit" value="Submit" className="submit-btn" />

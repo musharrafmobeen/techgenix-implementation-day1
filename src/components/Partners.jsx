@@ -81,9 +81,11 @@ const Partners = () => {
       >
         {data.map((obj) => (
           <div className="partner-container">
-            <img className="partner-logo" src={obj.img} alt="" />
-            <figcaption>
+            <div className="partner-logo-name">
+              <img className="partner-logo" src={obj.img} alt="" />
               <h2 className="partner-name">{obj.partnerName}</h2>
+            </div>
+            <figcaption>
               <p className="partner-description">{obj.partnerDescription}</p>
             </figcaption>
             <a href="#">Learn More</a>

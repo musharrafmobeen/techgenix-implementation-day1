@@ -57,7 +57,7 @@ const ServicesCards = () => {
   };
 
   return (
-    <div className="serviceCardSectionContainer">
+    <div className="serviceCardSectionContainer" id="services">
       <div className="service-section-title">
         <h1>Services</h1>
       </div>
