@@ -29,34 +29,37 @@ const NavBar = () => {
   return (
     <div className="navbar">
       <div className="navlogodiv">
-        <img className="logo" src="logoTechgenix.jpg" alt="" />
-        <h1 className="companyName">TECHGENIX</h1>
+        <a href="/">
+          <img className="logo" src="techgenixlogo.png" alt="" />
+        </a>
+
+        {/* <h1 className="companyName">TECHGENIX</h1> */}
       </div>
       <Media query="(max-width: 1024px)">
         {(matches) =>
           !matches ? (
             <div className="navlinksdiv">
-              <p className="navlink">
+              <div className="navlink">
                 <a className="link" href="/">
                   <b>Home</b>
                 </a>
-              </p>
-              <p className="navlink">
+              </div>
+              <div className="navlink">
                 <a className="link" href="/#services">
                   <b>Services</b>
                 </a>
-              </p>
-              <p className="navlink">
+              </div>
+              <div className="navlink">
                 <a className="link" href="/#contact">
                   <b>Contact Us</b>
                 </a>
-              </p>
-              <p className="navlink">
+              </div>
+              <div className="navlink">
                 <a className="link" href="/#aboutUs">
                   <b>About Us</b>
                 </a>
-              </p>
-              <p className="navlink">
+              </div>
+              <div className="navlink">
                 <button
                   className="link"
                   ref={companyButtonRef}
@@ -64,11 +67,11 @@ const NavBar = () => {
                 >
                   <b>Company</b>
                 </button>
-              </p>
+              </div>
 
               {display ? (
                 <div className="company-sidebar" ref={ref}>
-                  <p className="navlink">
+                  <div className="navlink">
                     <a className="link" href="/team">
                       <img
                         className="sidebar-logos"
@@ -77,8 +80,8 @@ const NavBar = () => {
                       />
                       <b>Team</b>
                     </a>
-                  </p>
-                  <p className="navlink">
+                  </div>
+                  <div className="navlink">
                     <a className="link" href="/careers">
                       <img
                         className="sidebar-logos"
@@ -87,7 +90,7 @@ const NavBar = () => {
                       />
                       <b>Careers</b>
                     </a>
-                  </p>
+                  </div>
                 </div>
               ) : (
                 <></>
@@ -110,47 +113,47 @@ const NavBar = () => {
               </div>
               {displayHamBurgerMenu ? (
                 <div className="nav-sidebar" ref={ref}>
-                  <p className="nav-sidebar-link">
+                  <div className="nav-sidebar-link">
                     <a className="link" href="/">
                       <img
                         className="sidebar-logos"
-                        src="teamlogo.png"
-                        alt=""
+                        src="home-icon2.png"
+                        alt="Home Icon"
                       />
                       <b>Home</b>
                     </a>
-                  </p>
-                  <p className="nav-sidebar-link">
+                  </div>
+                  <div className="nav-sidebar-link">
                     <a className="link" href="/#services">
                       <img
                         className="sidebar-logos"
-                        src="teamlogo.png"
-                        alt=""
+                        src="services-icon.png"
+                        alt="Services Icon"
                       />
                       <b>Services</b>
                     </a>
-                  </p>
-                  <p className="nav-sidebar-link">
+                  </div>
+                  <div className="nav-sidebar-link">
                     <a className="link" href="/#contact">
                       <img
                         className="sidebar-logos"
-                        src="teamlogo.png"
-                        alt=""
+                        src="contact-icon5.png"
+                        alt="contact icon"
                       />
                       <b>Contact Us</b>
                     </a>
-                  </p>
-                  <p className="nav-sidebar-link">
+                  </div>
+                  <div className="nav-sidebar-link">
                     <a className="link" href="/#aboutUs">
                       <img
                         className="sidebar-logos"
-                        src="teamlogo.png"
-                        alt=""
+                        src="aboutus-icon.jpg"
+                        alt="about us icon"
                       />
                       <b>About Us</b>
                     </a>
-                  </p>
-                  <p className="nav-sidebar-link">
+                  </div>
+                  <div className="nav-sidebar-link">
                     <a className="link" href="/team">
                       <img
                         className="sidebar-logos"
@@ -159,8 +162,8 @@ const NavBar = () => {
                       />
                       <b>Team</b>
                     </a>
-                  </p>
-                  <p className="nav-sidebar-link">
+                  </div>
+                  <div className="nav-sidebar-link">
                     <a className="link" href="/careers">
                       <img
                         className="sidebar-logos"
@@ -169,7 +172,7 @@ const NavBar = () => {
                       />
                       <b>Careers</b>
                     </a>
-                  </p>
+                  </div>
                 </div>
               ) : (
                 <></>

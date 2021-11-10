@@ -23,6 +23,12 @@
   background-color: white;
 }
 
+.team-card-article:hover {
+  transform: scale(1.05);
+  cursor: grab;
+  transition: 0.2s ease-in;
+}
+
 .team-carousel-container {
   width: 80%;
   height: fit-content;

@@ -27,3 +27,66 @@
   width: 100%;
   height: 100%;
 }
+
+@media screen and (max-width: 786px) {
+  .footer {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .footer {
+    font-size: x-small;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .company-map {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .footer {
+    font-size: xx-small;
+  }
+  .techgenix-info {
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+  }
+
+  .techgenix-CompanyAndPartners {
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+  }
+
+  .techgenix-services {
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+  }
+
+  .techgenix-SolutionsAndCustomers {
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+  }
+}
+
+.techgenix-info {
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+}
+
+.techgenix-CompanyAndPartners {
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+}
+
+.techgenix-services {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.techgenix-SolutionsAndCustomers {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}

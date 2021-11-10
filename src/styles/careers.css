@@ -39,6 +39,7 @@
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
   color: rgb(81, 123, 187);
   transform: scale(1.05);
+  transition: 0.2s ease-in;
 }
 
 .career-cardImg {
