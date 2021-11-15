@@ -18,8 +18,7 @@ const Footer = () => {
 
         <div className="techgenix-CompanyAndPartners">
           <b>Company</b>
-          <p>About</p>
-          <p>Us</p>
+          <p>About US</p>
           <p>Careers</p>
           <p>Labs</p>
           <p>Blog</p>

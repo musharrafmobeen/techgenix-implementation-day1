@@ -140,7 +140,6 @@
   top: 62px;
   right: 0px;
   background-color: rgb(255, 255, 255);
-  /* border: 1px solid rgb(255, 255, 255); */
 }
 
 .nav-sidebar {
@@ -154,18 +153,7 @@
   left: 0px;
   top: 62px;
   background-color: rgb(255, 255, 255);
-  /* border: 1px solid rgb(255, 255, 255); */
 }
-
-/* .close-icon-img {
-  width: 50px;
-  height: 50px;
-}
-
-.close-icon {
-  align-self: flex-end;
-  margin-right: 5em;
-} */
 
 .hamburger-icon {
   width: 30px;
